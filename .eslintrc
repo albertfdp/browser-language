@@ -1,0 +1,13 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["standard", "standard-react", "prettier", "prettier/react"],
+  "rules": {
+    "camelcase": [
+      "error",
+      {
+        "properties": "always",
+        "ignoreDestructuring": true
+      }
+    ]
+  }
+}
