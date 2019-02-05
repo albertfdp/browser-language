@@ -56,7 +56,7 @@ const App = ({ localeNames }) => {
           </table>
         </div>
         <footer className={styles.footer}>
-          Built with{' '}
+          Made with{' '}
           <span className="hearth" aria-label="hearth">
             ❤
           </span>{' '}
