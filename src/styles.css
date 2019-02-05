@@ -24,7 +24,7 @@ code {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   width: 100%;
 }
 
@@ -65,4 +65,8 @@ code {
 
 .localeCode {
   text-transform: none;
+}
+
+.footer a {
+  text-decoration: none;
 }

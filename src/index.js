@@ -21,7 +21,7 @@ const App = ({ localeNames }) => {
     return (
       <div className={styles.container}>
         <h1>
-          Your browser <code>Accept-Language</code> languages are
+          Your browser <code>Accept-Language</code> languages are:
         </h1>
         <div className={styles.content}>
           <table className={styles.table} width="100%">
@@ -55,6 +55,21 @@ const App = ({ localeNames }) => {
             </tbody>
           </table>
         </div>
+        <footer className={styles.footer}>
+          Built with{' '}
+          <span className="hearth" aria-label="hearth">
+            ❤
+          </span>{' '}
+          by{' '}
+          <a
+            href="https://nandez.cat?utm_source=browser-language"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            nandez.cat
+          </a>
+          .
+        </footer>
       </div>
     );
   }
