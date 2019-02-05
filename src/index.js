@@ -66,8 +66,8 @@ App.propTypes = {
   localeNames: PropTypes.object
 };
 
-Promise.all([
-  import(`../locales/${normalize(getBrowserLocales()[0])}.json`)
-]).then(({ default: locales }) => {
-  render(<App localeNames={locales} />, document.getElementById('root'));
-});
+import(`../locales/${normalize(getBrowserLocales()[0])}.json`).then(
+  ({ default: locales }) => {
+    render(<App localeNames={locales} />, document.getElementById('root'));
+  }
+);
