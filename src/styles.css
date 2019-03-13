@@ -28,6 +28,10 @@ code {
   width: 100%;
 }
 
+.container.error {
+  justify-content: center;
+}
+
 .content {
   width: 100%;
   max-width: 900px;
@@ -65,6 +69,10 @@ code {
 
 .localeCode {
   text-transform: none;
+}
+
+.emoji {
+  font-size: 48px;
 }
 
 .footer a {

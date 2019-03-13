@@ -17,9 +17,9 @@ const normalize = locale => {
 };
 
 const App = ({ localeNames }) => {
-  if (navigator.languages) {
-    const languages = getBrowserLocales();
+  const languages = getBrowserLocales();
 
+  if (languages) {
     return (
       <div className={styles.container}>
         <h1>
@@ -58,11 +58,7 @@ const App = ({ localeNames }) => {
           </table>
         </div>
         <footer className={styles.footer}>
-          Made with{' '}
-          <span className="hearth" aria-label="hearth">
-            ❤
-          </span>{' '}
-          by{' '}
+          Made by{' '}
           <a
             href="https://nandez.cat?utm_source=browser-language"
             target="_blank"
@@ -76,7 +72,14 @@ const App = ({ localeNames }) => {
     );
   }
 
-  return null;
+  return (
+    <div className={[styles.container, styles.error].join(' ')}>
+      <h1>Your browser is not supported. </h1>
+      <span className={styles.emoji} aria-label="eye roll">
+        🙄
+      </span>
+    </div>
+  );
 };
 
 App.propTypes = {
