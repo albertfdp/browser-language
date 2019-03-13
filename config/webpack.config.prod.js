@@ -84,6 +84,11 @@ module.exports = {
     ]
   },
 
+  stats: {
+    assets: false,
+    chunks: false
+  },
+
   plugins: [
     new MiniCSSExtractPlugin({
       filename: '[name].[chunkhash].css'
