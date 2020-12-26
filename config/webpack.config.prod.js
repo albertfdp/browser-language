@@ -42,8 +42,9 @@ module.exports = {
           {
             loader: "css-loader",
             options: {
-              localIdentName: "[hash:base64:5]",
-              modules: true,
+              modules: {
+                localIdentName: "[hash:base64:5]",
+              },
               importLoaders: true,
             },
           },
@@ -73,12 +74,10 @@ module.exports = {
 
     minimizer: [
       new TerserPlugin({
-        cache: true,
         terserOptions: {
           compress: true,
         },
         parallel: true,
-        sourceMap: true,
       }),
       new OptimizeCSSAssetsPlugin({}),
     ],
@@ -99,6 +98,8 @@ module.exports = {
       template: "./config/index.html",
     }),
 
-    new CopyWebpackPlugin([{ from: "./config/_redirects", to: "./" }]),
+    new CopyWebpackPlugin({
+      patterns: [{ from: "./config/_redirects", to: "./" }],
+    }),
   ].filter((p) => p),
 };

@@ -7,7 +7,7 @@ const srcDir = path.join(__dirname, "..", "src");
 module.exports = {
   mode: "development",
 
-  devtool: "cheap-eval-source-map",
+  devtool: "cheap-module-source-map",
 
   entry: {
     app: ["./src/index.js"],
@@ -33,8 +33,9 @@ module.exports = {
           {
             loader: "css-loader",
             options: {
-              localIdentName: "[path][name]--[local]--[hash:base64:5]",
-              modules: true,
+              modules: {
+                localIdentName: "[path][name]--[local]--[hash:base64:5]",
+              },
               importLoaders: true,
             },
           },
