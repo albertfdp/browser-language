@@ -7,6 +7,7 @@
   "author": "Albert Fernández",
   "license": "MIT",
   "scripts": {
+    "assets:update": "node ./scripts/createAssets.js",
     "build": "NODE_ENV=production webpack",
     "ci": "yarn lint",
     "format": "prettier --write './**/*.{css,js,md}'",

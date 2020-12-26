@@ -29,7 +29,6 @@
   "br": "bretonî",
   "bs": "bosnî",
   "bug": "bugî",
-  "byn": "byn",
   "ca": "katalanî",
   "ce": "çeçenî",
   "ceb": "sebwanoyî",
@@ -67,7 +66,6 @@
   "fy": "frîsî",
   "ga": "îrî",
   "gd": "gaelîka skotî",
-  "gez": "gez",
   "gil": "kîrîbatî",
   "gl": "galîsî",
   "gn": "guwaranî",
@@ -217,6 +215,7 @@
   "udm": "udmurtî",
   "ug": "oygurî",
   "uk": "ukraynî",
+  "und": "zimanê nenas",
   "ur": "urdûyî",
   "uz": "ozbekî",
   "vi": "viyetnamî",
@@ -228,6 +227,9 @@
   "yi": "yidîşî",
   "yo": "yorubayî",
   "yue": "kantonî",
+  "zh": "çînî",
+  "zh_hans": "çîniya sadekirî",
+  "zh_hant": "çîniya kevneşopî",
   "zu": "zuluyî",
   "zza": "zazakî"
 }
