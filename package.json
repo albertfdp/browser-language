@@ -16,9 +16,11 @@
   "dependencies": {
     "classnames": "2.2.6",
     "cldr": "^5.0.0",
+    "core-js": "^3.8.1",
     "prop-types": "^15.7.2",
     "react": "^16.8.4",
-    "react-dom": "^16.8.4"
+    "react-dom": "^16.8.4",
+    "regenerator-runtime": "^0.13.7"
   },
   "devDependencies": {
     "@albertfdp/eslint-config": "^1.0.1",
@@ -26,12 +28,11 @@
     "@babel/core": "^7.3.4",
     "@babel/plugin-proposal-class-properties": "^7.3.4",
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
-    "@babel/polyfill": "7.2.5",
     "@babel/preset-env": "^7.3.4",
-    "@babel/preset-react": "7.0.0",
+    "@babel/preset-react": "7.12.10",
     "@svgr/webpack": "4.1.0",
-    "babel-eslint": "10.0.1",
-    "babel-loader": "8.0.5",
+    "babel-eslint": "10.1.0",
+    "babel-loader": "8.2.2",
     "copy-webpack-plugin": "^5.0.1",
     "css-loader": "^2.1.1",
     "eslint": "^7.16.0",
