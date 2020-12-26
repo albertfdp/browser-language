@@ -1,6 +1,5 @@
 {
-  "parser": "babel-eslint",
-  "extends": ["standard", "standard-react", "prettier", "prettier/react"],
+  "extends": ["@albertfdp/eslint-config/browser"],
   "rules": {
     "camelcase": [
       "error",

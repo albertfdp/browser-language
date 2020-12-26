@@ -1,21 +1,21 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { HotModuleReplacementPlugin } = require('webpack');
-const path = require('path');
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const { HotModuleReplacementPlugin } = require("webpack");
+const path = require("path");
 
-const srcDir = path.join(__dirname, '..', 'src');
+const srcDir = path.join(__dirname, "..", "src");
 
 module.exports = {
-  mode: 'development',
+  mode: "development",
 
-  devtool: 'cheap-eval-source-map',
+  devtool: "cheap-eval-source-map",
 
   entry: {
-    app: ['./src/index.js']
+    app: ["./src/index.js"],
   },
 
   output: {
-    filename: '[name].js',
-    publicPath: '/'
+    filename: "[name].js",
+    publicPath: "/",
   },
 
   module: {
@@ -23,43 +23,43 @@ module.exports = {
       {
         test: /\.js$/,
         include: [srcDir],
-        loader: 'babel-loader'
+        loader: "babel-loader",
       },
       {
         test: /\.css$/,
         include: [srcDir],
         use: [
-          'style-loader',
+          "style-loader",
           {
-            loader: 'css-loader',
+            loader: "css-loader",
             options: {
-              localIdentName: '[path][name]--[local]--[hash:base64:5]',
+              localIdentName: "[path][name]--[local]--[hash:base64:5]",
               modules: true,
-              importLoaders: true
-            }
+              importLoaders: true,
+            },
           },
-          'postcss-loader'
-        ]
+          "postcss-loader",
+        ],
       },
       {
         test: /.svg$/,
-        use: ['@svgr/webpack']
-      }
-    ]
+        use: ["@svgr/webpack"],
+      },
+    ],
   },
 
   devServer: {
     historyApiFallback: true,
     hot: true,
-    port: 3000
+    port: 3000,
   },
 
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Browser language',
-      template: './config/index.html'
+      title: "Browser language",
+      template: "./config/index.html",
     }),
 
-    new HotModuleReplacementPlugin()
-  ]
+    new HotModuleReplacementPlugin(),
+  ],
 };
